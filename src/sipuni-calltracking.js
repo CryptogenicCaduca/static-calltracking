@@ -275,8 +275,9 @@
             for (var i = 0; i < targets.length; i++) {
                 if(targets[i].getAttribute('href')) {
                    targets[i].setAttribute('href', 'tel:' + value)
+                } else {
+                   targets[i].innerHTML = value;
                 }
-                targets[i].innerHTML = value;
             }
         },
 

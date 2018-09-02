@@ -274,7 +274,7 @@
         place: function(targets, value) {
             for (var i = 0; i < targets.length; i++) {
                 if(targets[i].getAttribute('href') {
-                   targets[i].setAttribute('href', value)
+                   targets[i].setAttribute('href', 'tel:' + value)
                 }
                 targets[i].innerHTML = value;
             }
